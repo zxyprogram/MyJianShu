@@ -1,0 +1,73 @@
+.iconDiamond{
+    color: #ea6f5a!important;
+}
+.info{
+    display: flex;
+    height: 48px;
+    margin-bottom: 32px;
+    position: relative;
+}
+.iconHead img{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+}
+.text{
+    height: 48px;
+    margin-left: 8px;
+}
+.line{
+    height: 24px;
+    line-height: 24px;
+    font-size: 13px;
+    color: #969696;
+}
+.iconLeaf{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: baseline;
+    position: relative;
+    top: 3px;
+}
+.name{
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+a.name{
+    color: black;
+}
+.name,.iconLeaf,.diamond,.writeDate,.wordsNumber{
+    margin-right: 8px;
+}
+.follow{
+    display: inline-block;
+    padding: 0 9px;
+    text-align: center;
+    border: 1px #ec7259 solid;
+    border-radius: 12px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #ec7259;
+    cursor: pointer;
+}
+.diamond{
+    color: #ea6f5a;
+}
+.declaration{
+    color: #666666;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.followRight{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 13px);
+}
+.mRight{
+    font-size: 14px;
+    margin-right: 12px;
+}

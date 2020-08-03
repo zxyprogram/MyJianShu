@@ -1,0 +1,48 @@
+/* iconfont引入基础样式 */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+/* iconfont引入基础样式结束 */
+.title{
+    color: #969696;
+    font-size: 14px;
+}
+.toRight{
+    display: block;
+    float: right;
+    cursor: pointer;
+}
+
+.tipList li{
+    cursor: pointer;
+}
+.trending{
+    color: gray;
+}
+.spin{
+    transition: 0.5s all ease-in;
+    
+    transform-origin: center center;
+    transform: rotate(0);
+    display: block;
+    float: left;
+}
+.listBox{
+    margin-top: 20px;
+}
+.loadMore{
+    text-decoration: none;
+    color: #787878;
+    display: block;
+    padding: 7px;
+    font-size: 13px;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+}

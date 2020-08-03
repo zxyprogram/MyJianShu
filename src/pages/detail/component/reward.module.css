@@ -1,0 +1,373 @@
+.reward {
+    margin: 40px 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 24px;
+}
+
+.rewardText {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.buttonReward {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #ec7259;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.rewardInfo {
+    margin-top: 25px;
+}
+
+.headListBox {
+    display: inline-block;
+}
+
+.headBox {
+    width: 24px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.headBox img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.rewardBox {
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.rewardHead {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    vertical-align: middle;
+    margin-right: 16px;
+}
+
+.rewardPartBox {
+    width: 640px;
+    height: 601px;
+    position: absolute;
+    z-index: 20;
+    top: calc(50% - 300.5px);
+    left: calc(50% - 320px);
+    /* transform: translate(-50%,-50%); */
+    
+    background-color: white;
+    border-radius: 4px;
+    
+}
+
+.maskLayer{
+    width: 100%;
+    height: 100%;
+}
+
+.rewardPart {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 48px 64px;
+    box-sizing: border-box;
+}
+
+.moneyBox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.titleReward {
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    color: #404040;
+    margin-bottom: 24px;
+}
+
+.candy {
+    font-size: 20px;
+
+}
+
+.moneyPart span {
+    font-style: italic;
+    font-size: 28px;
+}
+
+.moneyPart {
+    color: #969696;
+    width: 158px;
+    line-height: 56px;
+    text-align: center;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.moneyPart:nth-child(3n) {
+    margin-right: 0;
+}
+
+.activeMoneyPart {
+    color: #ec7259;
+}
+
+.input {
+    width: 158px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ec7259;
+    font-size: 28px;
+    font-style: normal;
+}
+
+.diyPart {
+    position: relative;
+}
+
+.diyPart span {
+    font-size: 16px;
+    font-style: normal;
+
+}
+
+.diyPart input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.diyPart input[type=number]::-webkit-inner-spin-button,
+.diyPart input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.active {
+    color: #ec7259;
+    border: 2px solid #ec7259;
+}
+
+textarea {
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+
+.message::placeholder {
+    color: #969696;
+}
+
+.message {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 12px;
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-top: 12px;
+    font-style: 16px;
+}
+
+.titlePayWay {
+    font-size: 15px;
+    text-align: center;
+    margin: 12px 0;
+}
+
+.iconWeChatPay {
+    color: #04BE02;
+}
+
+.wayToPayBox {
+    display: flex;
+    line-height: 56px;
+}
+
+.wayToPay {
+    margin-right: 12px;
+}
+
+.wayToPay span {
+    font-size: 16px;
+    margin-left: 4px
+}
+
+.iconWeChatPay,
+.iconAlipay {
+    font-size: 36px;
+    vertical-align: middle !important;
+
+}
+
+.iconWeChatPay {
+    font-size: 40px;
+}
+
+.wayToPay {
+    width: 33.33%;
+    text-align: center;
+    cursor: pointer;
+    border: 2px rgb(238, 238, 238) solid;
+    border-radius: 8px;
+}
+
+.yu_e {
+    cursor: not-allowed;
+    color: rgba(150, 150, 150, 0.8);
+    position: relative;
+}
+
+.activePay {
+    border: 2px #ec7259 solid;
+
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent; 
+    outline: none;
+}
+
+.button_confirm_to_pay {
+    display: block;
+    margin: 0 auto;
+    background-color: #ec7259;
+    color: #fff;
+    font-size: 18px;
+    padding: 0px 48px;
+    margin-top: 26px;
+    line-height: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: normal;
+}
+.buttonClose{
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 30;
+    color: #969696;
+    font-size: 22px;
+    cursor: pointer;
+}
+.buttonClose:hover{
+    color: #404040;
+    font-weight: bold;
+}
+.tipInfo{
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 26px;
+    font-size: 14px;
+    width: 250px;
+    text-align: left;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    bottom: 72px;
+    left: -39px;
+}
+.relative{
+    position: relative;
+}
+.triBot{
+    width: 0px;
+    height: 0px;
+    border-top: 6px rgba(0, 0, 0, 0.8) solid;
+    border-left: 6px transparent solid;
+    border-right: 6px transparent solid;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%);
+}
+.qrBox{
+    position: absolute;
+    width: 360px;
+    height: 329px;
+    top: calc(50% - 180px);
+    left: calc(50% - 164.5px);
+}
+.qrBoxPart{
+    position: relative;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    
+}
+.qrImg{
+    width: 200px;
+    height: 200px;
+}
+.qrClose{
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 30;
+    color: #969696;
+    font-size: 22px;
+    cursor: pointer;
+}
+.qrTitle{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #404040;
+    margin-bottom: 8px;
+}
+.imgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.moneyCost{
+    text-align: center;
+    font-size: 16px;
+    line-height: 36px;
+    margin-top: 8px;
+
+}
+.moneyCost span{
+    color: #da9e55;
+}

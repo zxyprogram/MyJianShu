@@ -1,0 +1,35 @@
+.detailPart {
+    border: 0;
+    width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+}
+.articlePart{
+    padding: 24px;
+    width: 730px;
+}
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    word-break: break-word;
+    color: #404040;
+    margin-bottom: 15px;
+}
+.tipInfo{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    line-height: 22px;
+    padding: 8px 24px;
+    border: 1px solid rgba(26,26,26,.1);
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(26,26,26,.1);
+    font-size: 14px;
+}
+.chahao{
+    color: #ec7259!important;
+}

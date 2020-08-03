@@ -1,0 +1,19 @@
+.enter{
+    
+    transform: scale(0);
+    transform-origin: center center;
+}
+.enterActive{
+    transform: scale(1);
+    transition: all 0.3s ease-in;
+}
+
+.exit{
+   
+    transform: scale(1);
+    transform-origin: center center;
+}
+.exitActive{
+    transform: scale(0);
+    transition: all 0.3s ease-in;
+}

@@ -1,0 +1,16 @@
+
+.enter{
+    transition: all 0.5s ease-out;
+    width: 190px;
+}
+.enterActive{
+    width: 280px;
+}
+
+.exit{
+    transition: all 0.5s ease-out;
+    width: 280px;
+}
+.exitActive{
+    width: 190px;
+}

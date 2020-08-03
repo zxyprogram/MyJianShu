@@ -1,0 +1,58 @@
+{
+    "succeed": true,
+    "authorInfo": {
+        "headUrl": "/images/head-icon-fatiao.webp",
+        "authorId": "1000",
+        "authorName": "发条橙skr",
+        "diamond": 71,
+        "data": "2020.04.08",
+        "time": "12:04:26",
+        "wordsNumber": 373,
+        "readings": 85749,
+        "declaration":"人生越往后，越要学会与自己和解",
+        "asset":{
+            "value":"3.1W",
+            "inRMB":2590.52
+        },
+        "totalWordsNumber":11.1,
+        "totalLikes":6705,
+        "totalFans":1482
+    },
+    "articleHtml":"<p>你要做一个不动声色的大人了。不准情绪化，不准偷偷想念，不准回头看。去过自己另外的生活。你要听话，不是所有的鱼都会生活在同一片海里。 -- 村上春树 《舞！舞！舞！》</p><p>总之岁月漫长，然而值得等待。 -- 村上春树 《如果我们的语言是威士忌》</p><img src='/images/p1-img-1.webp' alt=''><p><br></p><p><br></p><p>所谓努力，就是主动而有目的的活动。 -- 村上春树</p><p>刚刚好，看见你幸福的样子，于是幸福着你的幸福。 -- 村上春树 《国境以南太阳以西》</p><img src='/images/p1-img-2.webp' alt=''><p><br></p><p>不管全世界所有人怎么说，我都认为自己的感受才是正确的。无论别人怎么看，我绝不打乱自己的节奏。喜欢的事自然可以坚持，不喜欢怎么也长久不了。 -- 村上春树 《当我谈跑步时我谈些什么》</p><p>哪里有人喜欢孤独，只不过不乱交朋友罢了，那样只能落得失望 -- 村上春树 《挪威的森林》</p><img src='/images/p1-img-3.webp' alt=''><p><br></p><p>不愿随波逐流，但是一味的逆流而上也许只是徒劳的让自己疲惫。 -- 村上春树 《1Q84》</p><p>违背了自己定下的原则，哪怕只有一次，以后就将违背更多的原则。 -- 村上春树 《当我谈跑步时我谈些什么》</p>",
+    "articleInfo":{
+        "hide": true,
+        "likes": 2005,
+        "articleTitle":"村上春树语录：没有人喜欢孤独，只是不愿失望"
+    },
+    "rewardInfo":{
+        "rewardList":[
+            {
+                "imgUrl":"/images/head-icon1.webp",
+                "authorUrl":"/author/authorUknown"
+                
+            },
+            {
+                "imgUrl":"/images/head-icon2.webp",
+                "authorUrl":"/author/authorUknown"
+                
+            },
+            {
+                "imgUrl":"/images/head-icon3.webp",
+                "authorUrl":"/author/authorUknown"
+                
+            },
+            {
+                "imgUrl":"/images/head-icon4.webp",
+                "authorUrl":"/author/authorUknown"
+                
+            },
+            {
+                "imgUrl":"/images/head-icon5.webp",
+                "authorUrl":"/author/authorUknown"
+                
+            }
+        ],
+        "rewardText":"\"你的每一次赞赏，是我前进的动力\""
+    }
+   
+}

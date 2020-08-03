@@ -1,0 +1,33 @@
+.left{
+    position: fixed;
+    top: 216px;
+    left: calc((100vw - 960px)/2 - 50px);
+    text-align: center;
+    color: #969696;
+}
+.activeLikes{
+    background-color: #ec7259;
+    color: white;
+}
+.iconBox{
+    cursor: pointer;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border: rgb(238, 238, 238) solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.activeText{
+    color: #ec7259;
+}
+.shang{
+    font-size: 28px;
+}
+.likesText{
+    margin-bottom: 19px;
+}

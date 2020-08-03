@@ -1,0 +1,63 @@
+.articleInfo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.iconBox{
+    cursor: pointer;
+    line-height: 40px;
+    width: 40px;
+    border: rgb(238, 238, 238) solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    margin: 0 8px;
+    font-size: 20px;
+}
+.infoPart{
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+    color: #969696;
+}
+.others{
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: rgb(238, 238, 238) 1px solid;
+    text-align: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin-left: 8px;
+    position: relative;
+}
+.noBorder{
+    border: none;
+    margin-right: 4px;
+    border-radius: 0;
+    width: auto;
+}
+.otherBox{
+    position: absolute;
+   
+    width: 88px;
+    box-sizing: border-box;
+    line-height: 22px;
+    left: -25px;
+    bottom: 42px; 
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    border-radius: 4px;
+}
+.otherPart{
+    padding: 8px 12px;
+    color: #666;
+}
+.activeLikes{
+    background-color: #ec7259;
+    color: white;
+}
