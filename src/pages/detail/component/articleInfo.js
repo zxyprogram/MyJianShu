@@ -27,7 +27,7 @@ import otherTransition from "./otherTransition.module.css";
 	-
 */
 function ArticleInfo(props) {
-	const { handleOtherHide, loginState } = props;
+	const { handleOtherHide} = props;
 	const [otherShow, setOtherShow] = useState(false);
 	useEffect(() => {
 		if (otherShow) {

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import style from "./style.module.css";
 import AuthorInfo from "./component/authorInfo";
 import { connect } from "react-redux";
@@ -12,13 +12,13 @@ import {
 	actionDislikeCancel,
 	actionGetMoneyInfo,
 } from "./store/actionCreator";
-import Article from "./component/article";
 import ArticleInfo from "./component/articleInfo";
 import Reward from "./component/reward";
 import GapLine from "./component/gapLine";
 import LikeAndDislikeLeft from "./component/likeAndDislikeLeft";
 import { useParams, useHistory, useLocation } from "react-router-dom";
 
+const Article = lazy(() => import("./component/article"));
 function Detail(props) {
 	// console.log(props.match.params);
 	const { getDetailInfo, loginState } = props;
@@ -73,11 +73,11 @@ function Detail(props) {
 				setDislikesClicked(false);
 				return props.handleDislikeCancel();
 			}
-		}else{
+		} else {
 			toLogin();
 		}
 	}
-	function toLogin(){
+	function toLogin() {
 		const locationTo = {
 			pathname: "/login",
 			state: {
@@ -107,7 +107,9 @@ function Detail(props) {
 					authorInfo={props.authorInfo}
 					infoType="article"
 				></AuthorInfo>
-				<Article articleHtml={props.articleHtml}></Article>
+				<Suspense fallback={<div>Loading...</div>}>
+					<Article articleHtml={props.articleHtml}></Article>
+				</Suspense>
 				<ArticleInfo
 					articleInfo={props.articleInfo}
 					handleOtherShow={props.handleOtherShow}

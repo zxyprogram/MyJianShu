@@ -1,26 +1,28 @@
-import React,{useEffect} from "react";
-import {connect} from "react-redux";
-import {useLocation} from "react-router-dom";
+import React, { useEffect, Suspense, lazy } from "react";
+import { connect } from "react-redux";
+import { useLocation } from "react-router-dom";
 import style from "./style.module.css";
-import ArticleWrapper from "./component/articleWrapper";
 import Banner from "./component/banner";
 import BoardWrapper from "./component/boardWrapper";
 import QrWrapper from "./component/qrWrapper";
 import AuthorWrapper from "./component/authorWrapper";
 
+const ArticleWrapper = lazy(() => import("./component/articleWrapper"));
 function Home(props) {
 	let location = useLocation();
-	useEffect(()=>{
+	useEffect(() => {
 		document.title = props.homeTitle;
-	},[props.homeTitle]);
-	useEffect(()=>{
+	}, [props.homeTitle]);
+	useEffect(() => {
 		console.log(location);
-	})
+	});
 	return (
 		<div className={style.home}>
 			<div className={style.leftPart}>
 				<Banner></Banner>
-				<ArticleWrapper></ArticleWrapper>
+				<Suspense fallback={<div>Loading...</div>}>
+					<ArticleWrapper></ArticleWrapper>
+				</Suspense>
 			</div>
 			<div className={style.rightPart}>
 				<BoardWrapper></BoardWrapper>
@@ -31,14 +33,13 @@ function Home(props) {
 			<div className={style.rightPart}>
 				<AuthorWrapper></AuthorWrapper>
 			</div>
-			
 		</div>
 	);
 }
 
-const mapStateToProps = (state)=>{
+const mapStateToProps = (state) => {
 	return {
-		homeTitle:state.getIn(["home","homeTitle"]),
-	}
-}
-export default connect(mapStateToProps,null)(Home);
+		homeTitle: state.getIn(["home", "homeTitle"]),
+	};
+};
+export default connect(mapStateToProps, null)(Home);
